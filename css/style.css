@@ -1,14 +1,13 @@
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
-    background-color: #f8f8f8;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
 }
 
 nav ul {
-    background: #333;
+    background-color: #333;
     padding: 10px;
     list-style: none;
     display: flex;
@@ -20,20 +19,19 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
 }
 
-header .hero {
+.hero {
     text-align: center;
     padding: 100px 20px;
-    background: url('images/header-bg.jpg') no-repeat center center/cover;
-    color: #fff;
+    background: #00796b;
+    color: white;
 }
 
-header .hero h1 {
-    font-size: 48px;
+.hero h1 {
+    font-size: 36px;
     margin: 0;
 }
 
@@ -41,31 +39,19 @@ header .hero h1 {
     display: inline-block;
     padding: 10px 20px;
     background: #009688;
-    color: #fff;
+    color: white;
     text-decoration: none;
     margin-top: 20px;
+    border-radius: 5px;
 }
 
 section {
-    padding: 20px 40px;
+    padding: 40px 20px;
 }
 
-.profile-pic {
-    width: 200px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 20px;
-}
-
-.skills ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.skills ul li {
-    flex: 1 1 45%;
-    margin-bottom: 10px;
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .contact form {
@@ -82,7 +68,7 @@ section {
 .contact form input,
 .contact form textarea {
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -90,7 +76,7 @@ section {
 .contact form button {
     padding: 10px;
     background: #009688;
-    color: #fff;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -98,7 +84,7 @@ section {
 
 footer {
     background: #333;
-    color: #fff;
-    padding: 20px 0;
+    color: white;
     text-align: center;
+    padding: 10px 0;
 }
