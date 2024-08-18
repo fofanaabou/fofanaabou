@@ -3,25 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abou FOFANA - Développeur Senior Java & Spring | Angular</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio Développeur Sénior Java - Spring - Angular</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: right;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .main {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+        }
+        .main h1, .main h2, .main h3 {
+            color: #333;
+        }
+        .main p {
+            color: #666;
+        }
+        .main ul {
+            list-style: none;
+            padding: 0;
+        }
+        .main ul li {
+            background: #f4f4f4;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-left: #77aaff 5px solid;
+        }
+    </style>
 </head>
 <body>
 <header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="about.html">À Propos</a></li>
-            <li><a href="experience.html">Expériences</a></li>
-            <li><a href="projects.html">Projets</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <h1>Portfolio Développeur Sénior Java - Spring - Angular</h1>
+    </div>
 </header>
-<section class="hero">
-    <h1>Bonjour, je suis Abou FOFANA</h1>
-    <p>Développeur Senior spécialisé en Java, Spring, et Angular</p>
-    <a href="contact.html" class="cta">Contactez-moi</a>
-</section>
+<div class="container main">
+    <section>
+        <h2>À propos de moi</h2>
+        <p>Développeur Backend expérimenté chez Publicis Sapient avec plus de 5 ans d'expérience. Compétent en Java et Spring, spécialisé dans la conception d'API avec OpenAPI, le développement de microservices en utilisant Spring Boot et Java 17, et l'application de l'Architecture Hexagonale et du Design Piloté par le Domaine (DDD). Compétent dans la conception et l'optimisation de schémas de bases de données avec PostgreSQL et MongoDB, l'amélioration des performances des applications avec RabbitMQ, et l'assurance de la qualité du code grâce à des tests complets avec JUnit, Testcontainers, et Karate.</p>
+    </section>
+    <section>
+        <h2>Expériences Professionnelles</h2>
+        <h3>Développeur Backend - Publicis Sapient</h3>
+        <p>Juillet 2023 - Aujourd'hui, Paris</p>
+        <ul>
+            <li>Conception d'API avec OpenAPI : Collaboration avec les développeurs front-end et facilitation de l'intégration des services par des tiers.</li>
+            <li>Développement de Micro-services : Utilisation de Spring Boot et Java 17 pour coder des services autonomes communiquant via des API RESTful.</li>
+            <li>Architecture Hexagonale et DDD : Conception d'application centrée sur le domaine métier.</li>
+            <li>Gestion des Données : Conception et optimisation de schémas de bases de données avec PostgreSQL et MongoDB.</li>
+            <li>Communication Asynchrone avec RabbitMQ : Amélioration de la performance et de la fiabilité de l'application.</li>
+            <li>Tests : Réalisation de tests unitaires, d'intégration et fonctionnels pour assurer la qualité du code.</li>
+        </ul>
+        <h3>Ingénieur Développement Logiciels - Cat-Aummania</h3>
+        <p>Juillet 2023 - Juin 2033, Lyon</p>
+        <ul>
+            <li>Conception et implémentation de nouveaux modèles de données en utilisant SQL et MySQL, améliorant ainsi l'efficacité et la performance de la base.</li>
+            <li>Développement de nouveaux services web en utilisant Spring et Apache Camel, permettant une interaction plus fluide et efficace entre les différentes parties du système.</li>
+            <li>Intégration avec des API tierces comme Alfresco et Aleneo, augmentant ainsi la polyvalence et l'interopérabilité.</li>
+            <li>Traitement et stockage des données en utilisant Spring Batch, garantissant ainsi une gestion des données précise et efficace.</li>
+            <li>Communication entre microservices en utilisant Apache Camel, assurant ainsi une coordination sans faille entre les différents services.</li>
+            <li>Rédaction de tests unitaires avec JUnit, contribuant ainsi à maintenir la qualité et la fiabilité du code.</li>
+        </ul>
+        <h3>Développeur Full Stack - Altarmétrix</h3>
+        <p>Janvier 2020 - Juillet 2022, Lyon</p>
+        <ul>
+            <li>Réalisation des POC (Proof Of Concept) pour les besoins métiers de la plateforme.</li>
+            <li>Conception et développement des procédures de traitement des données (images, panoramas, nuages de points, etc.).</li>
+            <li>Développement des algorithmes et scripts de traitement.</li>
+            <li>Création et configuration des images Docker.</li>
+            <li>Mise en place des Logic App (Azure).</li>
+            <li>Développement des webservices (back-end) et des fonctionnalités (front-end).</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Formation</h2>
+        <ul>
+            <li><strong>Master en Système d'Information Géographique</strong> - Université Lyon Lumière 3, Lyon, France - 2018</li>
+            <li><strong>Ingénieur en Système d'Information Géographique</strong> - Université Abdelmalek Essaâdi, Tanger, Maroc - 2016</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Compétences</h2>
+        <ul>
+            <li><strong>Langages</strong> : Java, Python, Go, SQL, JavaScript</li>
+            <li><strong>Frameworks</strong> : Spring Boot, Hibernate, Angular</li>
+            <li><strong>Bases de données</strong> : PostgreSQL, MongoDB, MySQL</li>
+            <li><strong>Architecture</strong> : Microservices, Hexagonale, DDD</li>
+            <li><strong>Broker de messages</strong> : ActiveMQ, RabbitMQ</li>
+            <li><strong>Tests</strong> : JUnit 5, Mockito, Karate, TestContainers</li>
+            <li><strong>DevOps</strong> : Git, Jenkins, GitHub Actions, Kubernetes</li>
+            <li><strong>Cloud</strong> : Azure, AWS</li>
+            <li><strong>Méthodologies</strong> : Scrum</li>
+        </ul>
+    </section>
+</div>
 </body>
 </html>
