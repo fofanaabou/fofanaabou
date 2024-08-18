@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+nav ul {
+    background: #333;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('images/header-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+
+header .hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #009688;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+section {
+    padding: 20px 40px;
+}
+
+.profile-pic {
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills ul li {
+    flex: 1 1 45%;
+    margin-bottom: 10px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin: 10px 0 5px;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 10px;
+    background: #009688;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
