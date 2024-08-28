@@ -3,133 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Développeur Sénior Java - Spring - Angular</title>
+    <title>Portfolio Développeur</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: right;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        .main {
-            padding: 20px;
-            background: #fff;
-            margin-top: 20px;
-        }
-        .main h1, .main h2, .main h3 {
             color: #333;
         }
-        .main p {
-            color: #666;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
-        .main ul {
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            text-align: center;
+            background-color: #000;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #ffd700;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #333;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .about, .skills, .contact {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .about p {
+            margin-bottom: 10px;
+        }
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .two-column > div {
+            flex: 1;
+        }
+        ul {
             list-style: none;
             padding: 0;
         }
-        .main ul li {
-            background: #f4f4f4;
+        ul li {
             margin-bottom: 10px;
-            padding: 10px;
-            border-left: #77aaff 5px solid;
+            line-height: 1.6;
+        }
+        ul li:before {
+            content: "•";
+            color: #ffd700;
+            padding-right: 10px;
+        }
+        .experience {
+            margin-bottom: 20px;
+        }
+        .experience h3 {
+            margin-top: 0;
         }
     </style>
 </head>
 <body>
-<header>
-    <div class="container">
-        <h1> Développeur Sénior Java - Spring - Angular</h1>
+<div class="container">
+    <header>
+        <h1>Ingénieur Logiciel Java | Angular</h1>
+    </header>
+
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#experience">Expériences</a>
+        <a href="#skills">Compétences</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2 class="section-title">À propos</h2>
+        <p>Développeur backend avec plus de 5 ans d'expérience, spécialisé dans la création d'architectures robustes et évolutives. J'ai une expertise avérée dans la conception et l'implémentation d'API via OpenAPI, ainsi que dans le développement de microservices avec Spring Boot et Java. Maîtrisant également des compétences en Angular pour le frontend, je m'efforce de concevoir des solutions efficaces et performantes, tout en maintenant une attention particulière à la qualité du code et à l'optimisation des performances applicatives.</p>
+    </section>
+
+    <div class="two-column">
+        <section id="experience" class="experience">
+            <h2 class="section-title">Expériences Professionnelles</h2>
+            <div>
+                <h3>Développeur Backend - Publicis Sapient</h3>
+                <p><em>Juillet 2023 - Aujourd'hui, Paris</em></p>
+                <ul>
+                    <li>Conception d'API avec OpenAPI : Collaboration avec les développeurs front-end et facilitation de l'intégration des services par des tiers.</li>
+                    <li>Développement de Micro-services : Utilisation de Spring Boot et Java 17 pour coder des services autonomes communiquant via des API RESTful.</li>
+                    <li>Architecture Hexagonale et DDD : Conception d'application centrée sur le domaine métier.</li>
+                    <li>Gestion des Données : Conception et optimisation de schémas de bases de données avec PostgreSQL et MongoDB.</li>
+                    <li>Communication Asynchrone avec RabbitMQ : Amélioration de la performance et de la fiabilité de l'application.</li>
+                    <li>Tests : Réalisation de tests unitaires, d'intégration et fonctionnels pour assurer la qualité du code.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Ingénieur Développement Logiciels - Cat-Amania</h3>
+                <p><em>Juillet 2023 - Juin 2023, Lyon</em></p>
+                <ul>
+                    <li>Conception et implémentation de modèles de données en utilisant SQL et MySQL, améliorant ainsi l'efficacité des bases de données.</li>
+                    <li>Développement du Front-End en utilisant Angular et Angular Material, pour une expérience utilisateur moderne et réactive.</li>
+                    <li>Conception et développement du Back-End en utilisant Spring Boot, garantissant une architecture robuste et maintenable.</li>
+                    <li>Utilisation des microservices pour une meilleure répartition des tâches et une gestion plus efficace des ressources.</li>
+                    <li>Implémentation de CI/CD avec Jenkins, optimisant ainsi les processus de déploiement.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2 class="section-title">Compétences</h2>
+            <ul>
+                <li><strong>Langages</strong> : Java, Python, Go, SQL, JavaScript</li>
+                <li><strong>Frameworks</strong> : Spring Boot, Hibernate, Angular</li>
+                <li><strong>Bases de données</strong> : PostgreSQL, MongoDB, MySQL</li>
+                <li><strong>Architecture</strong> : Microservices, Hexagonale, DDD</li>
+                <li><strong>Broker de messages</strong> : ActiveMQ, RabbitMQ</li>
+                <li><strong>Tests</strong> : JUnit 5, Mockito, Karate, TestContainers</li>
+                <li><strong>DevOps</strong> : Git, Jenkins, GitHub Actions, Kubernetes</li>
+                <li><strong>Cloud</strong> : Azure, AWS</li>
+                <li><strong>Méthodologies</strong> : Scrum</li>
+            </ul>
+        </section>
     </div>
-</header>
-<div class="container main">
-    <section>
-        <h2>À propos de moi</h2>
-        <p>Ingénieur Logiciel Senior avec plus de 5 ans d'expérience, expert en développement backend, spécialisé dans la création d'architectures robustes et évolutives. Maîtrise de Java et du framework Spring, avec une expertise avérée dans la conception et l'implémentation d'API via OpenAPI. Fort d'une expérience approfondie dans le développement de microservices avec Spring Boot et Java 17, j'applique des approches avancées telles que l'Architecture Hexagonale et le Domain-Driven Design (DDD).
 
-            Bien que mon expertise se concentre sur le backend, je possède également de solides compétences en frontend avec Angular, notamment en programmation orientée objet, design de composants, et intégration d'API. Cependant, j'ai encore des marges de progression en matière d'ergonomie et de design d'interface utilisateur. Par ailleurs, j'excelle dans la conception et l'optimisation de bases de données relationnelles et NoSQL, comme PostgreSQL et MongoDB, ainsi que dans l'amélioration des performances applicatives via des systèmes de messagerie asynchrone tels que RabbitMQ.
-
-            Je suis également engagé dans la qualité du code, mettant en place des tests automatisés rigoureux avec JUnit, Testcontainers, et Karate pour garantir des livrables fiables et de haute qualité.</p>
-    </section>
-    <section>
-        <h2>Expériences Professionnelles</h2>
-        <h3>Développeur Backend - Publicis Sapient</h3>
-        <p>Juillet 2023 - Aujourd'hui, Paris</p>
-        <ul>
-            <li>Conception d'API avec OpenAPI : Collaboration avec les développeurs front-end et facilitation de l'intégration des services par des tiers.</li>
-            <li>Développement de Micro-services : Utilisation de Spring Boot et Java 17 pour coder des services autonomes communiquant via des API RESTful.</li>
-            <li>Architecture Hexagonale et DDD : Conception d'application centrée sur le domaine métier.</li>
-            <li>Gestion des Données : Conception et optimisation de schémas de bases de données avec PostgreSQL et MongoDB.</li>
-            <li>Communication Asynchrone avec RabbitMQ : Amélioration de la performance et de la fiabilité de l'application.</li>
-            <li>Tests : Réalisation de tests unitaires, d'intégration et fonctionnels pour assurer la qualité du code.</li>
-        </ul>
-        <h3>Ingénieur Développement Logiciels - Cat-Amania</h3>
-        <p>Juillet 2023 - Juin 2033, Lyon</p>
-        <ul>
-            <li>Conception et implémentation de nouveaux modèles de données en utilisant SQL et MySQL, améliorant ainsi l'efficacité et la performance de la base.</li>
-            <li>Développement de nouveaux services web en utilisant Spring et Apache Camel, permettant une interaction plus fluide et efficace entre les différentes parties du système.</li>
-            <li>Intégration avec des API tierces comme Alfresco et Akeneo, augmentant ainsi la polyvalence et l'interopérabilité.</li>
-            <li>Traitement et stockage des données en utilisant Spring Batch, garantissant ainsi une gestion des données précise et efficace.</li>
-            <li>Communication entre microservices en utilisant Apache Camel, assurant ainsi une coordination sans faille entre les différents services.</li>
-            <li>Rédaction de tests unitaires avec JUnit, contribuant ainsi à maintenir la qualité et la fiabilité du code.</li>
-        </ul>
-        <h3>Développeur Full Stack - Altarmétris</h3>
-        <p>Janvier 2020 - Juillet 2022, Lyon</p>
-        <ul>
-            <li>Réalisation des POC (Proof Of Concept) pour les besoins métiers de la plateforme.</li>
-            <li>Conception et développement des procédures de traitement des données (images, panoramas, nuages de points, etc.).</li>
-            <li>Développement des algorithmes et scripts de traitement.</li>
-            <li>Création et configuration des images Docker.</li>
-            <li>Mise en place des Logic App (Azure).</li>
-            <li>Développement des webservices (back-end) et des fonctionnalités (front-end).</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Formation</h2>
-        <ul>
-            <li><strong>Master en Système d'Information Géographique</strong> - Université Lyon Lumière 3, Lyon, France - 2018</li>
-            <li><strong>Ingénieur en Système d'Information Géographique</strong> - Université Abdelmalek Essaâdi, Tanger, Maroc - 2016</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Compétences</h2>
-        <ul>
-            <li><strong>Langages</strong> : Java, Python, Go, SQL, JavaScript</li>
-            <li><strong>Frameworks</strong> : Spring Boot, Hibernate, Angular</li>
-            <li><strong>Bases de données</strong> : PostgreSQL, MongoDB, MySQL</li>
-            <li><strong>Architecture</strong> : Microservices, Hexagonale, DDD</li>
-            <li><strong>Broker de messages</strong> : ActiveMQ, RabbitMQ</li>
-            <li><strong>Tests</strong> : JUnit 5, Mockito, Karate, TestContainers</li>
-            <li><strong>DevOps</strong> : Git, Jenkins, GitHub Actions, Kubernetes</li>
-            <li><strong>Cloud</strong> : Azure, AWS</li>
-            <li><strong>Méthodologies</strong> : Scrum</li>
-        </ul>
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact</h2>
+        <p>Vous pouvez me contacter via <a href="https://www.linkedin.com/in/fofana-abou/" target="_blank">LinkedIn</a>.</p>
     </section>
 </div>
 </body>
